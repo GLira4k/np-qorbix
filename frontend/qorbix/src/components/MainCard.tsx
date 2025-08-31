@@ -2,7 +2,7 @@ import { Card } from "antd"
 
 interface MainCardProps {
     className?: string;
-    content?: string
+    content?: string | React.ReactNode | React.ReactElement
 }
 
 function MainCard({ 
