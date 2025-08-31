@@ -1,6 +1,7 @@
 import { Content } from 'antd/es/layout/layout';
 import { Header } from 'antd/es/layout/layout';
-import DynamicDropDown from '../DropDown';
+
+import MainDropDown from '../MainDropDown';
 
 function DynamicHeader(){
     return(
@@ -13,7 +14,7 @@ function DynamicHeader(){
                     <p className='text-light'>
                         Header
                     </p>
-                    <DynamicDropDown />
+                    <MainDropDown />
                 </Content>
             </Header>
         </>

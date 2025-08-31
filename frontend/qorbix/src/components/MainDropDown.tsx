@@ -31,7 +31,7 @@ const items: MenuProps['items'] = [
   },
 ]
 
-function DynamicDropDown(){
+function MainDropDown(){
     return(
         <>
             <Dropdown className='d-flex align-items-center' menu={{ items }} trigger={['click']}>
@@ -45,4 +45,4 @@ function DynamicDropDown(){
     )
 }
 
-export default DynamicDropDown;
+export default MainDropDown;
