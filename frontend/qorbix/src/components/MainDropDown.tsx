@@ -1,6 +1,9 @@
 import { Dropdown, Space } from 'antd';
 import type { MenuProps } from 'antd';
 
+interface MainDropDownProps{
+    content?: string | React.ReactNode | React.ReactElement
+}
 
 const items: MenuProps['items'] = [
     {
@@ -31,13 +34,13 @@ const items: MenuProps['items'] = [
   },
 ]
 
-function MainDropDown(){
+function MainDropDown({content} : MainDropDownProps){
     return(
         <>
             <Dropdown className='d-flex align-items-center' menu={{ items }} trigger={['click']}>
-                <a onClick={(e) => e.preventDefault()}>
+                <a  onClick={(e) => e.preventDefault()}>
                     <Space>
-                        Click me
+                        {content}
                     </Space>
                 </a>
             </Dropdown>
